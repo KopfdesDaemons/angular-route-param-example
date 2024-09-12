@@ -9,8 +9,7 @@ import { ActivatedRoute, ActivationEnd, ActivationStart, ChildActivationStart, R
   styleUrl: './tabs-page.component.scss'
 })
 export class TabsPage implements OnInit {
-  route = inject(ActivatedRoute);
-  router = inject(Router);
+  private route = inject(ActivatedRoute);
 
   id: string | undefined;
 

@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './practice.component.scss'
 })
 export class PracticeComponent {
-  route = inject(ActivatedRoute);
+  private route = inject(ActivatedRoute);
   id: string | undefined;
 
   ngOnInit(): void {

@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './story.component.scss'
 })
 export class StoryComponent implements OnInit {
-  route = inject(ActivatedRoute);
+  private route = inject(ActivatedRoute);
   id: string | undefined;
 
   ngOnInit(): void {
